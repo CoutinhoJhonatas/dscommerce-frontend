@@ -32,6 +32,10 @@ html, body {
     background-color: var(--dsc-color-bg-primary);
 }
 
+main {
+    padding: 0 20px;
+}
+
 /* generic styles */
 .dsc-container {
     width: 100%;
@@ -45,8 +49,9 @@ html, body {
 
 /* header styles */
 header {
-    background-color: var(--dsc-color-bg-secondary);
     height: 70px;
+    padding: 0 20px;
+    background-color: var(--dsc-color-bg-secondary);
     display: flex;
     align-items: center;
 }
@@ -90,9 +95,15 @@ nav a {
 }
 
 .dsc-btn-page-container {
-    width: 220px;
+    width: 100%;
     display: grid;
     gap: 20px;
+}
+
+@media (min-width: 576px) {
+    .dsc-btn-page-container {
+        width: 220px;
+    }
 }
 
 .dsc-btn-blue {
